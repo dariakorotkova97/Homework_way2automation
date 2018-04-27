@@ -28,7 +28,7 @@ public class Test {
     }
 
     @org.junit.Test
-    public void testAuthorization() throws InterruptedException {
+    public void testFirst() throws InterruptedException {
         mainPage.clickSignInButton();
         mainPage.inputLogin("simtest");
         mainPage.inputPassword("12345678");
@@ -40,7 +40,7 @@ public class Test {
     }
 
     @After
-    public void afterTest(){
+    public void tearDown(){
         driver.manage().deleteAllCookies();
         driver.quit();
     }
